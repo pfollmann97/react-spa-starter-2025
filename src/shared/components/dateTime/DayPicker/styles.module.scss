@@ -1,0 +1,30 @@
+$COLOR__WARNING: #FF9900;
+$COLOR__MAIN_BLACK: #171717;
+
+:global(.rdp-root) {
+  --rdp-accent-color: #{$COLOR__WARNING};
+}
+
+.day-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.day > button {
+  @extend .day-text;
+}
+
+.selected > button {
+  background-color: $COLOR__WARNING;
+  color: #fff;
+}
+
+.outside > button {
+  color: $COLOR__MAIN_BLACK;
+  opacity: 0.38;
+}
+
+.weekday {
+  @extend .day-text;
+}
